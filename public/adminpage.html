@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager Admin Page</title>
+  <link rel="stylesheet" href="css/adminPage.css">
+</head>
+
+<body>
+  <nav>
+    <a id="createTaskLink">Add a Task</a>
+    <a id="Alltask">View Total Tasks</a>
+    <a id="currentTaskLink">View Current Tasks</a>
+    <a id="completedTaskLink">View Completed Tasks</a>
+    <input type="text" id="searchInput" style="width: 33%;" placeholder="Search">
+    <button type="button" id="searchButton">Search</button>
+    <button id="logoutBtn">Logout</button>
+  </nav>
+  <table id="taskTable">
+    <tr>
+      <th>Task Title</th>
+      <th>Task Description</th>
+      <th>Due Date</th>
+      <th>COMMENTS</th>
+      <th>Assigned to User</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </table>
+  <div id="createTaskForm">
+    <form id="taskForm">
+      <label for="Task_Title">Title:</label>
+      <input type="text" id="Task_Title" name="Task_Title" required>
+      <label for="DESCRIPTION">Description:</label>
+      <input type="text" id="DESCRIPTION" name="DESCRIPTION" required>
+      <label for="DUE_DATE">Due Date:</label>
+      <input type="date" id="DUE_DATE" name="DUE_DATE" required>
+      <label for="COMMENTS">COMMENTS:</label>
+      <input type="text" id="COMMENTS" name="COMMENTS" required>
+      <label for="USER">Assigned to :</label>
+      <div id="USER">
+      </div>
+      <button type="button" id="createTaskFormSubmit">Submit</button>
+      <button type="button" id="createTaskFormCancel">Cancel</button>
+    </form>
+  </div>
+  <div id="editTaskForm" class="add-form" style="display: none;">
+    <h2>Edit Task</h2>
+    <input type="hidden" id="editTaskId">
+    <input type="text" id="editTaskTitle" placeholder=" Task Title" required>
+    <input type="text" id="editTaskDescription" placeholder="Task Description" required>
+    <input type="date" id="editTaskDueDate" placeholder="Due Date" required>
+    <input type="text" id="editTaskCOMMENTS" placeholder="COMMENTS" required>
+    <input type="text" id="editTaskAssignedTo" placeholder="Assigned To" required>
+    <button id="update1" onclick="updateTask()">Update</button>
+    <button onclick="cancelUpdateTask()">Cancel</button>
+  </div>
+  <button id="logoutBtn" onclick="logout()">Logout</button>
+  <script>const logoutBtn = document.getElementById('logoutBtn');
+    logoutBtn.addEventListener('click', logout);
+
+    function logout() {
+      console.log("hello")
+      window.location.href = './login.html';
+    }</script>
+  <script src="js/adminPage.js"></script>
+</body>
+</html>

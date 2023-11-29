@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  h1 {
+    color: red;
+    
+  }
+
+  table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 2px;
+    background-color: blueviolet;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 2%;
+  }
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 30px;
+    text-align: left;
+  }
+
+  th {
+    background-color: gray;
+  }
+  #logoutBtn{
+    padding: 10px 20px;
+cursor: pointer;
+background-color: red;
+color: white;
+border: none;
+border-radius: 4px;
+position: absolute;
+margin-left: 600px;
+
+/* top: 6%;
+right: 20%; */
+  }
+
+  #notificationPopup {
+    display: none;
+    position: fixed;
+    top: 20px;
+    /* right: 20px; */
+    padding: 10px;
+    background-color: palegreen;
+    border: 1px solid palegreen;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    /* Adjust the max-width as needed */
+    margin-left: 10px;
+    border-radius: 25%;
+  }
+
+  #notificationTitle {
+    font-size: 19px;
+    font-weight: lighter;
+    color: palevioletred;
+  }
+
+  #notificationMessage {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  #closeNotificationBtn {
+    margin-top: 10px;
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+  }
+
+  #closeNotificationBtn:hover {
+    color: #0056b3;
+  }
+  #OK{
+    color: green;
+  }

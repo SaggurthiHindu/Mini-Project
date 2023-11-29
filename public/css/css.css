@@ -1,0 +1,173 @@
+/* Step 1: Apply basic styles to the body */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Step 2: Style the task table */
+  #taskTable {
+    width: 50%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: cornflowerblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+  
+  }
+  
+  #taskTable th,
+  #taskTable td {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  #taskTable th {
+    background-color:whitesmoke;
+    color: khaki;
+  }
+  
+  /* Step 3: Style the create task form popup */
+  #createTaskForm {
+    display: none;
+    position: fixed;
+    top: 13%;
+    left: 42%;
+    transform: translate(-5%, -5%);
+    padding: 80px;
+    background-color: khaki;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+  }
+  
+  /* Step 4: Style form elements */
+  form {
+    display: grid;
+    gap: 30px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  /* Step 5: Style navigation links */
+  nav {
+    background-color: whitesmoke;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    font-weight: initial;
+    cursor: pointer;
+  }
+  
+  /* Step 6: Style the task list navigation links */
+  #createTaskLink,
+  #currentTaskLink,
+  #completedTaskLink,
+  /* #Alltask, */
+  #searchTaskLink {
+    /* cursor: pointer; */
+    color: blue;
+    /* background-color: green; */
+    /* padding: 15px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: initial;
+    border-radius: 10%; */
+  }
+  #createTaskLink{
+    cursor: pointer;
+    color: #333;
+    background-color: green;
+    padding: 10px;
+    margin-right: 900px;
+    margin-top: 10%;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100px;
+    padding-top: 10%;
+  }
+  
+  /* Step 7: Style the search form (you can customize based on your design) */
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  /* Additional styling for the logout button */
+  #logoutBtn {
+    padding: 18px 26px;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    top: 90%;
+    right: 5%;
+  }
+    #searchInput{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    width:300px;
+  } 
+  #searchButton{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: greenyellow;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    width: 100px;
+  }  
+  
+  #createTaskFormSubmit{
+    padding: 5%;
+    border-radius: 10%;
+    background-color: cornflowerblue;
+    margin-left: 5%;
+  }
+  #createTaskFormCancel{
+    padding: 5%;
+    border-radius: 10%;
+    background-color: cornflowerblue;
+    margin-left: 5%;
+  }
+  #editTaskForm{
+    color:aqua;
+    width: 150px;
+   background-color: green;
+   margin-left: 50%;
+   border-radius: 4%;
+   text-align: center;
+  }
